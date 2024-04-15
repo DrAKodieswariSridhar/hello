@@ -15,7 +15,7 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_USERNAME }}/python-image:latest .
       - name: Docker Image 
         run: docker iamges
-      - name: Docker push 
+      - name: Docker Push 
         run: docker push ${{ secrets.DOCKER_USERNAME }}/python-image:latest
           
           
